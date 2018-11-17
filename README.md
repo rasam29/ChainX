@@ -1,7 +1,10 @@
 # ChainX
+
 MAKE CHAIN OF RESPONSIBILITY GREAT AGAIN
 
 Do a set of Task in Easy Way
+Its Just A LinkList With Benefits.
+
 # Example
 
 // void is stance for the input data to The chan
