@@ -10,7 +10,7 @@ Its Just A LinkList With Benefits.
 // void is stance for the input data to The chan
 // String would be output of the chain
 
-public class TestChain extends Chain<Void, String> {
+    public class TestChain extends Chain<Void, String> {
 
     @Override
     protected void doYourjob(Void inputData, OnActionListener<String> onActionListener) {
@@ -18,20 +18,20 @@ public class TestChain extends Chain<Void, String> {
         //DataBase , Network , etc.....
         String name = "Rasam Arabzadeh"; 
         onActionListener.onNext(name,new Test2Chain());
+      }
     }
-}
 
 
 
 
-public class Test2Chain extends Chain<String,Void> {
+    public class Test2Chain extends Chain<String,Void> {
 
-    @Override
-    protected void doYourjob(String inputData, OnActionListener<Void> onActionListener) {
-        System.out.println("Hello my Name is "+inputData);
-        onActionListener.onfinish(new NameQueriedState(inputData));
+        @Override
+        protected void doYourjob(String inputData, OnActionListener<Void> onActionListener) {
+            System.out.println("Hello my Name is "+inputData);
+            onActionListener.onfinish(new NameQueriedState(inputData));
+        }
     }
-}
 
         
   # Building the Chains
