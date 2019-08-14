@@ -33,12 +33,12 @@ Its Just A LinkList With Benefits.
         }
     }
 
-        
+```   
   # Building the Chains
-  
+```java
         //initiateChain will take the first chain of event
         //and another callback for onFinish
-        
+
       Chain.initiateTheChain(new TestChain(), baseState -> {
             System.out.println(baseState instanceof NameQueriedState);
         });
