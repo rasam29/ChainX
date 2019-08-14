@@ -9,7 +9,7 @@ Its Just A LinkList With Benefits.
 
 // void is stance for the input data to The chan
 // String would be output of the chain
-
+```java
     public class TestChain extends Chain<Void, String> {
 
     @Override
@@ -42,6 +42,7 @@ Its Just A LinkList With Benefits.
       Chain.initiateTheChain(new TestChain(), baseState -> {
             System.out.println(baseState instanceof NameQueriedState);
         });
+```
    # UnitTests
    _you can easily test each chain seperatly because both onNext and onFinish takes polymorphic objects
    
